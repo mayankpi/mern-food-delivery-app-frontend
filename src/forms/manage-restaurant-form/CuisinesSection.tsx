@@ -8,8 +8,9 @@ import { cuisineList } from "@/config/restaurants-options-config";
 import { useFormContext } from "react-hook-form";
 import CuisineCheckbox from "./CuisineCheckbox";
 
-export default function CuisinesSection() {
+const CuisinesSection = () => {
     const { control } = useFormContext();
+
     return (
         <div className="space-y-2">
             <div>
@@ -37,4 +38,6 @@ export default function CuisinesSection() {
             />
         </div>
     );
-}
+};
+
+export default CuisinesSection;
